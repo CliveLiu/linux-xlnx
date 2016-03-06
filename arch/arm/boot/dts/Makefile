@@ -1,3 +1,7 @@
+# 修改记录
+# 日期         修改人          描述
+# 20160306     刘旭升          feat: 支持zynq-motion项目
+
 ifeq ($(CONFIG_OF),y)
 
 # Keep at91 dtb files sorted alphabetically for each SoC
@@ -496,7 +500,8 @@ dtb-$(CONFIG_ARCH_ZYNQ) += \
 	zynq-zc770-xm011.dtb \
 	zynq-zc770-xm012.dtb \
 	zynq-zc770-xm013.dtb \
-	zynq-zed.dtb
+	zynq-zed.dtb \
+	zynq-motion.dtb
 dtb-$(CONFIG_MACH_ARMADA_370) += \
 	armada-370-db.dtb \
 	armada-370-mirabox.dtb \
