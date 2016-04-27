@@ -1653,8 +1653,11 @@ static int sdhci_check_ro(struct sdhci_host *host)
 	spin_unlock_irqrestore(&host->lock, flags);
 
 	/* This quirk needs to be replaced by a callback-function later */
+    /*
 	return host->quirks & SDHCI_QUIRK_INVERTED_WRITE_PROTECT ?
 		!is_readonly : is_readonly;
+        */
+    return 0;
 }
 
 #define SAMPLE_COUNT	5

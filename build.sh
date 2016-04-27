@@ -23,7 +23,7 @@ CUR_DIR=${CUR_PATH##*/}
 rm -rf arch/arm/boot/uImage arch/arm/boot/dts/zynq-motion.dtb
 
 # Build project
-[ ! -e .config ] && make ARCH=arm xilinx_zynq_defconfig
+[ ! -e .config ] && make ARCH=arm xilinx_zynq_motion_defconfig
 make ARCH=arm zynq-motion.dtb
 make ARCH=arm UIMAGE_LOADADDR=0x8000 uImage
 
